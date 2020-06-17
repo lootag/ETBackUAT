@@ -1,4 +1,5 @@
 ﻿using System;
+using Authentication.Interfaces;
 
 namespace Authentication
 {
