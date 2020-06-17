@@ -4,7 +4,7 @@ namespace Persistence.DTO
 {
     public class UserGetDto
     {
-        public UserGetDto(long Id, string Email, byte[] Hash, byte[] Salt, Status Status)
+        public UserGetDto(long Id, string Email, byte[] Hash, byte[] Salt, int Status)
         {
             this.Id = Id;
             this.Email = Email;
@@ -17,6 +17,6 @@ namespace Persistence.DTO
         public string Email { get; }
         public byte[] Hash { get; }
         public byte[] Salt { get; }
-        public Status Status {get; }
+        public int Status {get; }
     }
 }
