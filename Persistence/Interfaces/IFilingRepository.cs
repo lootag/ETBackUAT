@@ -8,5 +8,6 @@ namespace Persistence.Interfaces
     public interface IFilingRepository
     {
         IList<FilingGetDto> GetByCIKDateFilingItem(FilingRequest filingRequest, IContext context);
+        IList<int> GetAllCiks(IContext context);
     }
 }

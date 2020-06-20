@@ -26,5 +26,13 @@ namespace Persistence
             return toReturn;
         }
 
+        public IList<int> GetAllCiks(IContext context)
+        {
+            IList<int> toReturn = new List<int>();
+            const string sql = "select distinct(CIK) FROM dbo.filings";
+            toReturn = context.Query<int>(sql);
+            return toReturn;
+        }
+
     }
 }

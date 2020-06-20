@@ -5,6 +5,6 @@ namespace Export.Interfaces
 {
     public interface IExportService
     {
-        IList<Stream> DownloadFromFileSystem(IList<string> name, string folder, string connectionString);
+        IList<Stream> DownloadFromFileSystem(IList<string> names, string folder, string connectionString);
     }
 }
