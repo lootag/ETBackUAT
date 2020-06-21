@@ -20,7 +20,7 @@ using AutoMapper;
 namespace Main.Controllers
 {
     [ApiController]
-    [Authorize]
+    
     public class HomeController : ControllerBase
     {
         private readonly ILogger<HomeController> _logger;
